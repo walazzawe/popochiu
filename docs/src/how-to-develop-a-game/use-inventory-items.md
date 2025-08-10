@@ -14,7 +14,7 @@ We'll give the toy car to Popsy, so open the script of the secondary character, 
 
 ```gdscript
 # When the node is clicked and there is an inventory item selected
-func _on_item_used(item: PopochiuInventoryItem) -> void:
+func _on_item_used(_item: PopochiuInventoryItem) -> void:
 	if item == I.ToyCar:
 		await C.player.walk_to_clicked()
 		await C.player.face_clicked()
